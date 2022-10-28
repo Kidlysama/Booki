@@ -1,0 +1,140 @@
+@media (min-width: 991px) {
+    .rechercher{
+        display: block;
+    }
+    .loupe{
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .all-articles {
+        flex-direction: column;
+    }
+    .popular-list {
+        flex-direction: row ;
+        justify-content: space-evenly;
+    }
+    .card-popular {
+        max-width: 30%;
+    }
+
+
+    .card-activity img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        height: 267px;
+        }
+        .card-activity{
+            flex-basis: 23%;
+            margin-bottom: 30px;
+        }
+
+        .loupe{
+            display: none;
+        }
+}
+
+@media (max-width: 767px) {
+    *{
+        margin-left: 0px;
+    }
+    header, main, footer {
+        padding:0px;
+    }
+
+    nav {
+        display: block;
+    }
+    nav img {
+        display: block;
+        margin: auto;
+        padding-left: 40px;
+    }
+    .bloc-menu {
+        display: flex;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .bloc-menu a {
+        flex-basis: 50%;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 3px solid var(--grey);
+    }
+    .bloc-menu a:hover {
+        border-top-color: transparent;
+        border-bottom-color: var(--blue);  
+    }
+
+    .gap{
+    margin-right: 500px;
+    }
+    .filter{
+        max-width: 90%;
+        padding-left: 20px;
+    }
+    .search-bar, .info{
+        padding: 15px;
+    }
+    .rechercher{
+        display: none ;
+    }
+    
+    .loupe{
+        display: block;
+    }
+    
+
+    .all-articles{
+        flex-direction: column-reverse;
+    }
+
+    .all-articles > div {
+        border-radius: 0px;
+        background-color: var(--light-grey);
+      }
+
+    .hebergements{
+        background-color: white !important;
+    }
+    .showMore a {
+        color: white !important;
+    }
+    .card-hebergements{
+        flex-direction: column;
+    }
+    .card{
+        width: 98% !important;
+    }
+
+    .populaires{
+        background-color: var(--grey);
+
+    }
+    .popular-list{
+        flex-direction: column;
+    }
+    .card-popular{
+        max-width: 100%;
+    }
+
+    .activites-list{
+        flex-direction: column;
+    }
+    
+    .card-activity{
+        flex-basis: 15%;
+        margin-bottom: 30px;
+    }
+
+    .bloc-footer {
+        flex-direction: column;
+    }
+
+}
